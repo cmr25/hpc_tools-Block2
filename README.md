@@ -52,9 +52,9 @@ Debido a las restricciones de espacio para la subida de archivos por parte de gi
 
   - Python 3.10.8  
 
-  - PyTorch (compatible con CUDA 12.x)  
+  - PyTorch
 
-  - Transformers 4.x, Datasets 2.x, Accelerate, TensorBoard
+  - Transformers, Datasets, Accelerate, TensorBoard
 
 - **Parámetros (BASELINE, SQuAD v1.1)**
 
@@ -64,11 +64,12 @@ Debido a las restricciones de espacio para la subida de archivos por parte de gi
 
   - gpu_count: 1
 
-  - gpu_name": NVIDIA A100-PCIE-40GB
+  - gpu_name: NVIDIA A100-PCIE-40GB
 
-  - cuda_version: 12.8,
+  - cuda_version: 12.8
 
   - pt_version: 2.9.0+cu128
+  
  
   - params:
 
