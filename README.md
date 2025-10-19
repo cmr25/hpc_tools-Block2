@@ -129,6 +129,11 @@ WALL_CLOCK_MINUTES=13, de acuerdo con este resultado el job tardó 13 minutos en
 
 - Resultados de evaluación sobre SQuAD v1.1: el modelo alcanzó **EM ≈ 81.28%** (respuestas exactamente iguales) y **F1 ≈ 88.38%** (superposición parcial de palabras), procesando ~500 muestras/s. La evaluación completa duró ~22 s.
 
+  Adicionalmente se incluyen los resultados de tensorboard. En concreto se seleccionar las graficas de dos métricas particularmente importantes para evaluar el aprendizaje del modelo y optimizar los recursos de entreno.
+
+  La primera de ellas es la grafica de train/loss:
+  ![alt text](https://github.com/cmr25/hpc_tools-Block2/blob/main/train_loss.PNG "train/loss")
+
 # **Conclusiones**
 
 El modelo **BERT-Base-Uncased**, entrenado sobre **SQuAD v1.1**, se ejecutó correctamente en una única **GPU NVIDIA A100**, alcanzando tiempos de entrenamiento relativamente cortos (~**13 minutos** con la configuración seleccionada).
