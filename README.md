@@ -19,7 +19,11 @@ El objetivo principal es entrenar y evaluar el modelo en una única GPU NVIDIA A
 | `logs/`            | Archivos de salida y error generados por SLURM.                                                                                                           |
 | `checkpoints/`     | Carpeta donde se guardan los modelos entrenados y checkpoints intermedios.                                                                                |
 
-
+Debido a las restricciones de espacio para la subida de archivos por parte de github se han omitido los siguientes directorios y archivos existentes en la versión local del repositorio:
+| Archivo                             | Descripción                                                                                                                              |
+| ----------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `hf_cache/`                         | Caché local de modelos y datasets de Hugging Face.                                                                                       |
+| `checkpoints/model.safetensors`     | Modelo entrenado. No pudo subirse debido a las limitaciones de espacio de github.                                                        |
 # **Instrucciones ejecucion**
 
 1. Configurar entorno: Ejecutar el script `setup_bert.sh`, que instala los requisitos indicados en `requirements.txt` y todas las librerías necesarias para el entrenamiento.
@@ -128,9 +132,6 @@ WALL_CLOCK_MINUTES=13, de acuerdo con este resultado el job tardó 13 minutos en
 # **Conclusiones**
 
 El modelo **BERT-Base-Uncased**, entrenado sobre **SQuAD v1.1**, se ejecutó correctamente en una única **GPU NVIDIA A100**, alcanzando tiempos de entrenamiento relativamente cortos (~**13 minutos** con la configuración seleccionada).
-
-El uso del **Hugging Face Trainer** simplificó la gestión del proceso de entrenamiento y el seguimiento de métricas, lo que permitió centrarse en el análisis del rendimiento.
-
 Esta implementación **baseline** servirá como punto de referencia para la versión **paralelizada** que se desarrollará en el trabajo **DISTRIBUTED**.
   
 
