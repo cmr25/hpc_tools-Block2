@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-10-19 14:24:44",
+  "gpu_available": true,
+  "gpu_count": 1,
+  "gpu_name": "NVIDIA A100-PCIE-40GB",
+  "cuda_version": "12.8",
+  "pt_version": "2.9.0+cu128",
+  "params": {
+    "model": "bert-base-uncased",
+    "dataset": "squad",
+    "epochs": 2,
+    "batch_size_per_device": 24,
+    "max_seq_length": 384,
+    "doc_stride": 128,
+    "lr": 4e-05
+  }
+}

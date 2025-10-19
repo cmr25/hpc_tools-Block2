@@ -1,0 +1,16 @@
+cesga/2020 unloaded
+        Preparing the environment for use of the CESGA 2020 software stack.
+        Please rebuild modules cache: module --ignore-cache avail
+     
+cesga/2020 loaded
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) cesga/2020
+nvcc uses g++ as the default host compiler. If you want to use icpc as a host compiler you can load the compiler module and use nvcc_icpc (or -ccbin=icpc). For completeness and convenience nvcc_g++ is also provided. 
+cuda/12.2.0 loaded
+python/3.10.8 loaded
+/mnt/netapp2/Store_uni/home/ulc/cursos/curso366/venvs/venv-bert/lib/python3.10/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Downloading builder script: 0.00B [00:00, ?B/s]Downloading builder script: 4.53kB [00:00, 21.2MB/s]
+Downloading extra modules: 0.00B [00:00, ?B/s]Downloading extra modules: 3.32kB [00:00, 19.4MB/s]
