@@ -134,6 +134,13 @@ WALL_CLOCK_MINUTES=13, de acuerdo con este resultado el job tardó 13 minutos en
   La primera de ellas es la grafica de train/loss:
   ![alt text](https://github.com/cmr25/hpc_tools-Block2/blob/main/train_loss.PNG "train/loss")
 
+  En ella se muestra la evolución de la función de pérdida a lo largo del entrenamiento. Como vemos a partir de los 4000 steps, aproximadamente 6 minutos desde el inicio del entrenamiento la función de pérdida se estabiliza en torno a valores bajos tal y como se esperaba esto nos indica que los pesos se ajustan adecuadamente.
+
+  La segunda métrica es train/grad_norm:
+
+  ![alt text](https://github.com/cmr25/hpc_tools-Block2/blob/main/train_grad_norm.PNG "train/grad_norm")
+  En esta gráfica vemos la evolución de la norma del gradiente, que es una medida que nos informa de como se están ajustando los pesos del modelo para reducir la pérdida. La curva se mantiene oscilando constantemente, sin subidas descontroladas o caídas hacia cero, por lo que el entrenamiento es estable.
+
 # **Conclusiones**
 
 El modelo **BERT-Base-Uncased**, entrenado sobre **SQuAD v1.1**, se ejecutó correctamente en una única **GPU NVIDIA A100**, alcanzando tiempos de entrenamiento relativamente cortos (~**13 minutos** con la configuración seleccionada).
